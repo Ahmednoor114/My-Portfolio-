@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+    Name: Ahmednoor Abdi
+    Date: 05/26/2021
+    Most recent revision:
+-->
+<html lang="en">
+    <head>
+        <title>Contacts</title>
+    </head>
+
+    <body>
+        <main>
+            <Header>
+                <h1>Contacts</h1>
+                <hr/>
+                <p><a href="index.html">Home</a></p>
+                <hr/>
+            </Header>
+            <h2>Information Request</h2>
+            <form action="submit.html" method="POST"></form>
+            <!-- First Name label and textbox -->
+            <label for="firstName">First Name:</label><br/>
+            <input type="text" id="firstName"name="firstName"><br/>
+            <!-- Last Name label and textbox -->
+            <label for="LastName">Last Name:</label><br/>
+            <input type="text" id="LastName"name="LastName"><br/>
+            <!-- Phone Number label and textbox -->
+            <label for="phone">Phone Number:</label><br/>
+            <input type="text" id="phone"name="Phone"><br/>
+            <!-- Dropdown menu -->
+            <label for="contacts">Best time to call:</label><br/>
+            <select name="contact" id="contact">
+                <option value="default"><selected>--Select one--</option>
+                <option value="morning">Morning (8AM to 12PM Eastern)</option>
+                <option value="Afternoon">Afternoon (12PM to 5PM Eastern)</option>
+                <option value="Evening">Evening (5PM to 8PM Eastern)</option>
+            </select>
+            <!-- Check list -->
+            <fieldset>
+                <legend>I am interested in (Check all that apply):</legend><br/>
+                <input type="checkbox" name="interest" id="fontEnd" value="frontEnd">
+                <label for="frontEnd">Front End Web Development</label><br/>
+                <input type="checkbox" name="interest" id="backEnd" value="backEnd">
+                <label for="backEnd">Back-End Web Development</label><br/>
+                <input type="checkbox" name="interest" id="database" value="database">
+                <label for="Database">Database Design</label><br/>
+            </fieldset>
+            <!-- Radio buttons -->
+            <fieldset>
+                <legend>I have filled in the client questionaire form:</legend><br/>
+                <input type="radio" name="choice1" id="questionaire" value="yes">
+                <label for="choice1">Yes</label><br/>
+                <input type="radio" name="choice2" id="questionaire" value="no">
+                <label for="choice2">No</label><br/>
+            </fieldset>
+            <!-- Textarea -->
+            <label for="info">Additional Information</label><br/>
+            <textarea name="info" id="info" ></textarea><br/>
+             <!-- Submit button -->
+            <input type="submit" name="submit" value="submit">
+            
+        </main>
+    </body>
+    <footer>
+        <hr/>
+                <p>&copy; 2021 Ahmednoor Abdi. All rights reserved.</p>
+    </footer>    
+</html>

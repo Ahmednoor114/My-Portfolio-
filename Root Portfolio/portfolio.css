@@ -1,0 +1,16 @@
+body{
+    background-color: gainsboro;
+}
+header, footer{
+    background-color: olive ;
+    box-sizing: content-box;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.border{
+    border: thick solid olive;
+    border-radius: 12px;
+}
+#past-experience{
+    border: thick solid olive;
+}
