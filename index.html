@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <!--
     Name: Ahmednoor Abdi
-    Date: 05/24/2021
-    Most recent revision:
+    Date: 06/05/2021
+    Most recent revision: Created external main.css styling sheet.
 -->
 <html lang="en">
     <head> 
         <title>Portfolio for Ahmednoor Abdi </title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            table, th,td {
+                border: 1px solid #0d1f2d;
+                border-collapse:collapse;
+                padding: 5px 10px; 
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr{
+                height: 30px;
+            }
+            th{
+                background-color: #546a7b;
+                color:#f2eded;
+            }
+            tr:nth-child(odd){
+                background-color: #e69898;    
+            }
+        </style>
     </head>
-    <body>
+    <body >
         <main>
             <header> 
                 <h1>Portfolio for Ahmednoor Abdi </h1>  
             </header>
-            
-            <hr/>
-            <nav>
+            <!--
+                    CODE-ALONG: Using Inline Styles in CSS
+                -->
+            <nav class="border">
                 <!--
                     CODE-ALONG: Using Inline Elements
                 -->
@@ -23,24 +52,29 @@
                 <p><a href="contacts.html">Contacts</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
             </nav>
-            <hr/>
+            <!--
+                    CODE-ALONG: Using Inline Styles in CSS
+                -->
             <section>
-                <article id="about-me"> <!--This is the first chunk inside the section element. -->
+                <article class="border" id="about-me"> <!--This is the first chunk inside the section element. -->
                     <h2><em>About Me</em></h2>
                     <img src="Images/Ahmednoor-Abdi-About.png" alt="Portrait of Ahmednoor Abdi"/>
                     <p>University Student seeking for summer internship. Dedicated and motivated learner with a strong background in Fields of <strong>Computer Science, Management Information System and Data Analytics.</strong></p>
                     <p>I am from Kenya, and I relocated to the United States of America in 2015. I started my education journey and <strong>finished on time in four years.</strong> I earned my bachelor's degree in Management Information System with a manor of Business Analytics while working full time, and I  completed a 3.60 GBA.</p>
                 </article>
-                <article id="past-experience"><!--This is the second chunk inside the section element. -->
+                <article  class="border" id="past-experience"><!--This is the second chunk inside the section element. -->
                 <h2><em>Past Experiences</em></h2>
                 <img src="Images/Ahmednoor-Abdi-Experiences.png" alt="Portrait of Ahmednoor Abdi" />
                 <table>
                     <caption>Employment History</caption>
-                    <tr>
-                       <th>Years of Employment</th>
-                       <th>Title</th>
-                       <th>Company</th> 
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Years of Employment</th>
+                            <th>Title</th>
+                            <th>Company</th> 
+                         </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>2016-Present</td>
                         <td>City Bus Driver </td>
@@ -54,16 +88,16 @@
                     <tr>
                         <td>2016-2018</td>
                         <td>Student</td>
-                        <td>Saint Paul College</td>
+                        <td>Saint Paul Community & Technical College</td>
                     </tr>
                     <tr>
-                        <td>2015-2016</td>
+                        <td>2015-2016 (Relocated to USA) </td>
                         <td>Security</td>
                         <td>Statewide Protective Agency</td>
                     </tr>
                     <tr>
                         <td>2009-2014</td>
-                        <td>Salesman </td>
+                        <td>Salesman, accountant, and assistance manager</td>
                         <td>Tiba Oil</td>
                     </tr>
                     <tr>
@@ -73,18 +107,19 @@
                     </tr>
                     <tr>
                         <td>2006-2009</td>
-                        <td>Student</td>
+                        <td>Student, and shopkeeper</td>
                         <td>Mandera Secondary School</td>
                     </tr>
+                </tbody>
                 </table>
                 </article>
-                <article id="hobbies"><!--This is the third chunk inside the section element. -->
+                <article    class="border" id="hobbies"><!--This is the third chunk inside the section element. -->
                 <h2><em>Hobbies</em></h2>
-                <img src="Images/Ahmednoor-Abdi-Hobbies.png" alt="Portrait of Ahmednoor Abdi" />
+                <img src="Images/hoppies picture.jpg" alt="Portrait of Ahmednoor Abdi" />
                 <ul>
                     <li>Authors</li>
                     <ol>
-                        <li>Anik K.</li>
+                        <li>Anik K.</li> 
                         <li>Michael I.</li>
                         <li>Philip S.</li>
                     </ol>
@@ -112,7 +147,6 @@
                 </article>
             </section>
             <footer>
-                <hr/>
                 <p>&copy; 2021 Ahmednoor Abdi. All rights reserved.</p>
             </footer>
          
